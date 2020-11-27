@@ -6,18 +6,10 @@ import Container from '@material-ui/core/Container';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-import MenuIcon from '@material-ui/icons/Menu';
-import AccountCircle from '@material-ui/icons/AccountCircle';
 import CreateIcon from '@material-ui/icons/Create';
-import MailIcon from '@material-ui/icons/Mail';
-import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
-import InputLabel from '@material-ui/core/InputLabel';
-// import MenuItem from '@material-ui/core/MenuItem';
-// import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import Dialog from '@material-ui/core/Dialog';
@@ -26,6 +18,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
+import ModalForm from './components/modalForm';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -49,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     btnTwo: {
         color: '#000',
         width: 'auto',
-        marginTop: '6px',
+        marginTop: '20px',
         backgroundColor: 'white',
         fontSize: '0.8125rem',
         height: '34px',
@@ -63,12 +56,17 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.up('md')]: {
         display: 'flex',
       },
+      
     },
     sectionMobile: {
       display: 'flex',
       [theme.breakpoints.up('md')]: {
         display: 'none',
       },
+      btnOne: {
+        color: '#000',
+        fontSize: '0.8125rem',
+    },
     },
     formControl: {
         margin: theme.spacing(1),
@@ -171,16 +169,16 @@ const useStyles = makeStyles((theme) => ({
             <div className={classes.grow}>
                 <AppBar position="static">
                     <Toolbar>
-                        <IconButton
+                        {/* <IconButton
                             edge="start"
                             className={classes.menuButton}
                             color="inherit"
                             aria-label="open drawer"
                         >
                         <MenuIcon />
-                        </IconButton>
+                        </IconButton> */}
                         <Typography className={classes.title} variant="h6" noWrap>
-                            Material-UI
+                            LOGO
                         </Typography>
                         <div className={classes.grow} />
                         <div className={classes.sectionDesktop}>
@@ -222,11 +220,10 @@ const useStyles = makeStyles((theme) => ({
                                     aria-labelledby="alert-dialog-slide-title"
                                     aria-describedby="alert-dialog-slide-description"
                                 >
-                                    <DialogTitle id="alert-dialog-slide-title">{"Use Google's location service?"}</DialogTitle>
+                                    <DialogTitle id="alert-dialog-slide-title">{"Add Posts"}</DialogTitle>
                                     <DialogContent>
                                     <DialogContentText id="alert-dialog-slide-description">
-                                        Let Google help apps determine location. This means sending anonymous location data to
-                                        Google, even when no apps are running.
+                                        <ModalForm />
                                     </DialogContentText>
                                     </DialogContent>
                                     <DialogActions>
