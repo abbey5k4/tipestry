@@ -18,6 +18,13 @@ const theme = createMuiTheme({
       default: '#E6ECF0',
     },
   },
+  overrides: {
+    MuiLink: {
+      text: {
+        color: 'black'
+      }
+    }
+  }
 });
 
 export default theme;

@@ -25,10 +25,10 @@ const Tipestry = () => {
             </Box>
             <Container maxWidth="md" className={classes.wrapper}>
                 <Grid container spacing={3}>
-                    <Grid item xs={12} sm={8}>
+                    <Grid item xs={12} sm={8} md={8}>
                         <MainBody />
                     </Grid>
-                    <Grid item xs={12} sm={4}>
+                    <Grid item xs={12} sm={4} md={4}>
                         <Aside />
                     </Grid>
                 </Grid>

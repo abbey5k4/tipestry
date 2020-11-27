@@ -11,24 +11,51 @@ const useStyles = makeStyles((theme) => ({
     paper: {
       padding: theme.spacing(2),
       textAlign: 'left',
-      overflow: 'ellipsis',
       color: theme.palette.text.secondary,
+      display: 'flex',
+      flexWrap: 'wrap',
+      alignItems: 'flex-start',
+      flexDirection: 'row',
+      justifyContent: 'flex-start',
     },
-    a: {
+    MuiLink: {
       color: 'blue',
+      marginLeft: '10px'
     }
 }));
 const Aside = () => {
     const classes = useStyles();
     return (
         <div>
+            <Paper className={classes.paper}>
+              <Link href="/">#discussion</Link>
+              <Link href="/">#in</Link>
+              <Link href="/">#youtube</Link>
+              <Link href="/">#extincs</Link>
+              <Link href="/">#animals</Link>
+              <Link href="/">#living</Link>
+              <Link href="/">#largest</Link>
+              <Link href="/">#vs</Link>
+              <Link href="/">#crypto</Link>
+              <Link href="/">#discussion</Link>
+              <Link href="/">#in</Link>
+              <Link href="/">#youtube</Link>
+              <Link href="/">#extincs</Link>
+              <Link href="/">#animals</Link>
+              <Link href="/">#living</Link>
+              <Link href="/">#largest</Link>
+              <Link href="/">#vs</Link>
+              <Link href="/">#crypto</Link>
+              
+            </Paper>
             <Box>
               <img src="" alt="" />
             </Box>
-            <Paper className={classes.paper} textOverflow="ellipsis">
+            <Paper className={classes.paper}>
                 <Typography>
                   &copy;<span>{new Date().getFullYear()} Tipestry</span>
-                  <Link href="/">Faq</Link>
+                </Typography>
+                <Link href="/">Faq</Link>
                   <Link href="/">Contact</Link>
                   <Link href="/">About</Link>
                   <Link href="/">Contest</Link>
@@ -37,10 +64,9 @@ const Aside = () => {
                   <Link href="/">White Paper</Link>
                   <Link href="/">Tipestry for Chrome</Link>
                   <Link href="/">Terms and Condition</Link>
-                </Typography>
                 <Typography>
                   Follow Us on Social Media
-                </Typography>
+                </Typography> <br />
                 <Box>
                   icons
                 </Box>
