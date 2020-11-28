@@ -98,6 +98,182 @@ const CardTwo = () => {
                 </Box>
                 <Divider className={classes.dividerFullWidth} display="block"/>
             </Paper>
+            <Paper className={classes.paper}>
+                <Box component="div" className={classes.root}>
+                    <Avatar className={classes.orange}>R</Avatar>
+                    <Box component="div" className={classes.handleArea}>
+                        <Link href="/">
+                            @tundeEdnut
+                        </Link>
+                        <Typography variant="p">
+                            a day ago
+                        </Typography>
+                    </Box>
+                </Box>
+                <Box component="div" >
+                    <Typography variant="h6">
+                        I now have papers!!!
+                    </Typography>
+                    <Typography variant="h6" className={classes.paraText}>
+                        #postoftheweek #potw #dogecoin #twitter 
+                    </Typography>
+                </Box>
+                <Box component="div" className={classes.imageArea}>
+                    image
+                </Box>
+                <Link href="/">
+                    (twitter.com)
+                </Link>
+                <Box component="div" className={classes.iconsArea}>
+                    <Box component="div" className={classes.iconOne} >
+                        <ThumbUpAltIcon />
+                        <Typography variant="p">
+                            123k
+                        </Typography>
+                        <ThumbDownIcon />
+                    </Box>
+                    <Box component="div" className={classes.iconTwo}>
+                        <MessageIcon />
+                        <Typography variant="p">
+                            123k
+                        </Typography>
+                        <ShareIcon />
+                    </Box>
+                </Box>
+                <Divider className={classes.dividerFullWidth} display="block"/>
+            </Paper>
+            <Paper className={classes.paper}>
+                <Box component="div" className={classes.root}>
+                    <Avatar className={classes.orange}>R</Avatar>
+                    <Box component="div" className={classes.handleArea}>
+                        <Link href="/">
+                            @davidoDMW
+                        </Link>
+                        <Typography variant="p">
+                            a day ago
+                        </Typography>
+                    </Box>
+                </Box>
+                <Box component="div" >
+                    <Typography variant="h6">
+                        I am the biggest in Nigeria
+                    </Typography>
+                    <Typography variant="h6" className={classes.paraText}>
+                        #postoftheweek #potw #dogecoin #twitter 
+                    </Typography>
+                </Box>
+                <Box component="div" className={classes.imageArea}>
+                    image
+                </Box>
+                <Link href="/">
+                    (twitter.com)
+                </Link>
+                <Box component="div" className={classes.iconsArea}>
+                    <Box component="div" className={classes.iconOne} >
+                        <ThumbUpAltIcon />
+                        <Typography variant="p">
+                            198k
+                        </Typography>
+                        <ThumbDownIcon />
+                    </Box>
+                    <Box component="div" className={classes.iconTwo}>
+                        <MessageIcon />
+                        <Typography variant="p">
+                            123k
+                        </Typography>
+                        <ShareIcon />
+                    </Box>
+                </Box>
+                <Divider className={classes.dividerFullWidth} display="block"/>
+            </Paper>
+            <Paper className={classes.paper}>
+                <Box component="div" className={classes.root}>
+                    <Avatar className={classes.orange}>R</Avatar>
+                    <Box component="div" className={classes.handleArea}>
+                        <Link href="/">
+                            @djkhalid1
+                        </Link>
+                        <Typography variant="p">
+                            a day ago
+                        </Typography>
+                    </Box>
+                </Box>
+                <Box component="div" >
+                    <Typography variant="h6">
+                        We're the best!
+                    </Typography>
+                    <Typography variant="h6" className={classes.paraText}>
+                        #postoftheweek #potw #dogecoin #twitter 
+                    </Typography>
+                </Box>
+                <Box component="div" className={classes.imageArea}>
+                    image
+                </Box>
+                <Link href="/">
+                    (twitter.com)
+                </Link>
+                <Box component="div" className={classes.iconsArea}>
+                    <Box component="div" className={classes.iconOne} >
+                        <ThumbUpAltIcon />
+                        <Typography variant="p">
+                            12M
+                        </Typography>
+                        <ThumbDownIcon />
+                    </Box>
+                    <Box component="div" className={classes.iconTwo}>
+                        <MessageIcon />
+                        <Typography variant="p">
+                            2M
+                        </Typography>
+                        <ShareIcon />
+                    </Box>
+                </Box>
+                <Divider className={classes.dividerFullWidth} display="block"/>
+            </Paper>
+            <Paper className={classes.paper}>
+                <Box component="div" className={classes.root}>
+                    <Avatar className={classes.orange}>R</Avatar>
+                    <Box component="div" className={classes.handleArea}>
+                        <Link href="/">
+                            @shaq8789
+                        </Link>
+                        <Typography variant="p">
+                            a day ago
+                        </Typography>
+                    </Box>
+                </Box>
+                <Box component="div" >
+                    <Typography variant="h6">
+                        Let's talk business
+                    </Typography>
+                    <Typography variant="h6" className={classes.paraText}>
+                        #postoftheweek #potw #dogecoin #twitter 
+                    </Typography>
+                </Box>
+                <Box component="div" className={classes.imageArea}>
+                    image
+                </Box>
+                <Link href="/">
+                    (twitter.com)
+                </Link>
+                <Box component="div" className={classes.iconsArea}>
+                    <Box component="div" className={classes.iconOne} >
+                        <ThumbUpAltIcon />
+                        <Typography variant="p">
+                            198
+                        </Typography>
+                        <ThumbDownIcon />
+                    </Box>
+                    <Box component="div" className={classes.iconTwo}>
+                        <MessageIcon />
+                        <Typography variant="p">
+                            300
+                        </Typography>
+                        <ShareIcon />
+                    </Box>
+                </Box>
+                <Divider className={classes.dividerFullWidth} display="block"/>
+            </Paper>
         </div>
     )
 }

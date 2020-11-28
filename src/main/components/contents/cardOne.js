@@ -59,6 +59,122 @@ const CardOne = () => {
                     </Grid>
                 </Grid>
             </Paper>
+            <Paper className={classes.paper}>
+                <Grid container spacing={3}>
+                    <Grid item xs={1} sm={1} md={1}>
+                        <ThumbUpAltIcon />
+                        <Typography variant="p">
+                            123k
+                        </Typography>
+                        <ThumbDownIcon />
+                    </Grid>
+                    <Grid item xs={3} sm={3} md={3}>
+                        image
+                    </Grid>
+                    <Grid item xs={8} sm={8} md={8}>
+                        <Typography variant="h6">
+                            I now have papers!!!
+                        </Typography>
+                        <Typography variant="h6" className={classes.paraText}>
+                            @tundeEdnut a day ago #postoftheweek #potw #dogecoin #twitter (twitter.com)
+                        </Typography>
+                        <Box component="div" className={classes.iconFlex}>
+                            <MessageIcon />
+                            <Typography variant="p">
+                                123k
+                            </Typography>
+                            <ShareIcon />
+                        </Box>
+                    </Grid>
+                </Grid>
+            </Paper>
+            <Paper className={classes.paper}>
+                <Grid container spacing={3}>
+                    <Grid item xs={1} sm={1} md={1}>
+                        <ThumbUpAltIcon />
+                        <Typography variant="p">
+                            198k
+                        </Typography>
+                        <ThumbDownIcon />
+                    </Grid>
+                    <Grid item xs={3} sm={3} md={3}>
+                        image
+                    </Grid>
+                    <Grid item xs={8} sm={8} md={8}>
+                        <Typography variant="h6">
+                            I am the biggest in Nigeria
+                        </Typography>
+                        <Typography variant="h6" className={classes.paraText}>
+                            @davidoDMW a day ago #postoftheweek #potw #dogecoin #twitter (twitter.com)
+                        </Typography>
+                        <Box component="div" className={classes.iconFlex}>
+                            <MessageIcon />
+                            <Typography variant="p">
+                                123k
+                            </Typography>
+                            <ShareIcon />
+                        </Box>
+                    </Grid>
+                </Grid>
+            </Paper>
+            <Paper className={classes.paper}>
+                <Grid container spacing={3}>
+                    <Grid item xs={1} sm={1} md={1}>
+                        <ThumbUpAltIcon />
+                        <Typography variant="p">
+                            12M
+                        </Typography>
+                        <ThumbDownIcon />
+                    </Grid>
+                    <Grid item xs={3} sm={3} md={3}>
+                        image
+                    </Grid>
+                    <Grid item xs={8} sm={8} md={8}>
+                        <Typography variant="h6">
+                            We're the best!
+                        </Typography>
+                        <Typography variant="h6" className={classes.paraText}>
+                            @djkhalid1 a day ago #postoftheweek #potw #dogecoin #twitter (twitter.com)
+                        </Typography>
+                        <Box component="div" className={classes.iconFlex}>
+                            <MessageIcon />
+                            <Typography variant="p">
+                                2M
+                            </Typography>
+                            <ShareIcon />
+                        </Box>
+                    </Grid>
+                </Grid>
+            </Paper>
+            <Paper className={classes.paper}>
+                <Grid container spacing={3}>
+                    <Grid item xs={1} sm={1} md={1}>
+                        <ThumbUpAltIcon />
+                        <Typography variant="p">
+                            198
+                        </Typography>
+                        <ThumbDownIcon />
+                    </Grid>
+                    <Grid item xs={3} sm={3} md={3}>
+                        image
+                    </Grid>
+                    <Grid item xs={8} sm={8} md={8}>
+                        <Typography variant="h6">
+                            Let's talk business
+                        </Typography>
+                        <Typography variant="h6" className={classes.paraText}>
+                            @shaq8789 a day ago #postoftheweek #potw #dogecoin #twitter (twitter.com)
+                        </Typography>
+                        <Box component="div" className={classes.iconFlex}>
+                            <MessageIcon />
+                            <Typography variant="p">
+                                300
+                            </Typography>
+                            <ShareIcon />
+                        </Box>
+                    </Grid>
+                </Grid>
+            </Paper>
 
             
         </div>
