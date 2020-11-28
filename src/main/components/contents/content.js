@@ -4,7 +4,8 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import SearchBar from './search';
 import Head from './head';
-import Cards from './cards';
+import CardOne from './cardOne';
+import CardTwo from './cardTwo';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -29,7 +30,8 @@ const MainBody = () => {
                     <Paper className={classes.paper}>
                         <Head />
                     </Paper>
-                    <Cards />
+                    <CardOne />
+                    <CardTwo />
                 </Grid>
 
             </Grid>

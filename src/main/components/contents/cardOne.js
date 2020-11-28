@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex'
     }
 }));
-const Cards = () => {
+const CardOne = () => {
     const classes = useStyles();
     return (
         <div>
@@ -60,8 +60,10 @@ const Cards = () => {
                     </Grid>
                 </Grid>
             </Paper>
+
+            
         </div>
     )
 }
 
-export default Cards;
+export default CardOne;
