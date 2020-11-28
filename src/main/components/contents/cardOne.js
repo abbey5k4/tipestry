@@ -8,7 +8,6 @@ import { Box, Typography } from '@material-ui/core';
 import MessageIcon from '@material-ui/icons/Message';
 import ShareIcon from '@material-ui/icons/Share';
 
-
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,

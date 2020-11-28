@@ -1,0 +1,1 @@
+export const HANDLE_CARD_CHANGE = "HANDLE_CARD_CHANGE";

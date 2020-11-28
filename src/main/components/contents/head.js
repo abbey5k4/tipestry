@@ -4,6 +4,8 @@ import Grid from '@material-ui/core/Grid';
 import { Box, Typography } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import ListIcon from '@material-ui/icons/List';
+import { useDispatch } from "react-redux";
+import { cardAction } from "../../store/actions";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -21,6 +23,13 @@ const useStyles = makeStyles((theme) => ({
 }));
 const Head = () => {
     const classes = useStyles();
+    const dispatch = useDispatch();
+    const showCardOne = () => {
+        dispatch(cardAction.setCardLevel("cardOne"));
+    };
+    const showCardTwo = () => {
+        dispatch(cardAction.setCardLevel("cardTwo"));
+    };
     return (
         <div className={classes.root}>
             <Grid container spacing={3}>
@@ -29,8 +38,8 @@ const Head = () => {
                         <Typography>
                             VIEW
                         </Typography>
-                        <MenuIcon className={classes.iconOne} />
-                        <ListIcon className={classes.iconTwo} />
+                        <MenuIcon className={classes.iconOne} onClick={showCardOne}/>
+                        <ListIcon className={classes.iconTwo} onClick={showCardTwo}/>
                     </Box>
                 </Grid>
                 <Grid item xs={4}>

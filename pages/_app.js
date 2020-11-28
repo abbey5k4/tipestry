@@ -1,10 +1,19 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '../src/theme';
+import appReducer from "../src/main/store/reducers/index";
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import { createLogger } from 'redux-logger';
 
+
+
+const logger = createLogger();
+const store = createStore(appReducer, applyMiddleware(thunk,logger));
 export default function MyApp(props) {
   const { Component, pageProps } = props;
 
@@ -25,7 +34,9 @@ export default function MyApp(props) {
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
-        <Component {...pageProps} />
+        <Provider store={store}>
+          <Component {...pageProps} />
+      </Provider>
       </ThemeProvider>
     </React.Fragment>
   );
